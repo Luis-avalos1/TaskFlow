@@ -1,0 +1,12 @@
+export declare const formatDate: (date: Date | string) => string;
+export declare const formatDateTime: (date: Date | string) => string;
+export declare const isDatePast: (date: Date | string) => boolean;
+export declare const isValidEmail: (email: string) => boolean;
+export declare const isValidPassword: (password: string) => boolean;
+export declare const truncateText: (text: string, maxLength: number) => string;
+export declare const slugify: (text: string) => string;
+export declare const unique: <T>(array: T[]) => T[];
+export declare const groupBy: <T, K extends keyof T>(array: T[], key: K) => Record<string, T[]>;
+export declare const createError: (message: string, code?: string) => Error;
+export declare const generateId: () => string;
+//# sourceMappingURL=index.d.ts.map

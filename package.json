@@ -1,0 +1,31 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "Full-Stack Project Management Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "npm run client:build && npm run server:build",
+    "client:build": "cd client && npm run build",
+    "server:build": "cd server && npm run build",
+    "test": "npm run client:test && npm run server:test",
+    "client:test": "cd client && npm test",
+    "server:test": "cd server && npm test",
+    "lint": "npm run client:lint && npm run server:lint",
+    "client:lint": "cd client && npm run lint",
+    "server:lint": "cd server && npm run lint"
+  },
+  "keywords": ["project-management", "react", "node", "typescript", "full-stack"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ]
+}
